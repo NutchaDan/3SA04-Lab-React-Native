@@ -14,22 +14,22 @@ export default function Forecast(props) {
 const styles = StyleSheet.create({
     fontmain: {
         color: '#5A6E3A',
-        fontSize: '35px',
+        fontSize: 35,
         textAlign: 'center',
         textAlignVertical: 'center',
-        paddingBottom: '20px',
-        paddingTop: '15px'
+        paddingBottom: 20,
+        paddingTop: 15
     },
     fontdescription: {
         color: '#5A6C16',
-        fontSize: '18px',
+        fontSize: 18,
         textAlign: 'center',
         textAlignVertical: 'center',
-        paddingBottom: '25px'
+        paddingBottom: 25
     },
     fonttemp: {
         color: '#667761',
-        fontSize: '25px',
+        fontSize: 25,
         textAlign: 'center',
         textAlignVertical: 'center',
     }

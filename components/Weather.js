@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         width: '100%',
         height: '100%',
-        paddingTop: '25px',
+        paddingTop: 25,
     },
     stylefont: {
         color: '#2E3D50',
-        fontSize: '20px',
+        fontSize: 20,
         textAlign: 'center',
         textAlignVertical: 'center'
     }

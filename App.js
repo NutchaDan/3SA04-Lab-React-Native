@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Weather from './components/Weather';
-import Constants from 'expo-Constants';
+import Constants from 'expo-constants';
 
 export default function App() {
   return (
