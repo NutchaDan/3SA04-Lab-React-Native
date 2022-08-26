@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         fontSize: '18px',
         textAlign: 'center',
         textAlignVertical: 'center',
-        paddingBottom: '30px'
+        paddingBottom: '25px'
     },
     fonttemp: {
         color: '#667761',
