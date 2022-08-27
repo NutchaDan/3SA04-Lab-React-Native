@@ -2,12 +2,12 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
 export default function Forecast(props) {
-    const imageicon = {url: `https://openweathermap.org/img/wn/${props.icon}@2x.png`}
+    const image = {uri: `https://openweathermap.org/img/wn/${props.icon}@2x.png`}
     return (
         <View>
-            <Text style={styles.fontmain}>{props.place}</Text>
+            <Text style={styles.fontplace}>{props.place} ( {props.country} )</Text>
             <View style={styles.view}>
-                <Image style={styles.image} source={imageicon} resizeMode={'contain'}/>
+                <Image style={styles.image} source={image}/>
                 <View>
                     <Text style={styles.fontmain}>{props.main}</Text>
                     <Text style={styles.fontdescription}>{props.description}</Text>
@@ -19,13 +19,18 @@ export default function Forecast(props) {
 }
 
 const styles = StyleSheet.create({
+    fontplace: {
+        fontSize: 35,
+        color: '#5A6C16',
+        paddingBottom: '15%',
+        textAlign: 'center'
+    },
     fontmain: {
         color: '#5A6E3A',
         fontSize: 35,
         textAlign: 'center',
         textAlignVertical: 'center',
-        paddingBottom: 20,
-        paddingTop: 15
+        paddingBottom: 20
     },
     fontdescription: {
         color: '#5A6C16',
@@ -46,7 +51,11 @@ const styles = StyleSheet.create({
     },
     view: {
         flexDirection: 'row', 
-        justifyContent: 'space-evenly',
-        paddingTop: '30%'
+        justifyContent: 'center',
+        backgroundColor: 'rgba(48, 54, 49, 0.1)',
+        width: '100%',
+        height: '55%',
+        alignItems: 'center',
+        borderRadius: 40,
     }
 })

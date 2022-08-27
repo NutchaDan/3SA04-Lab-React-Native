@@ -8,7 +8,8 @@ export default function Weather(props) {
         description: '-',
         icon: '-',
         temp: 0,
-        place: '-'
+        place: '-',
+        country: '-'
     })
 
     useEffect(() => {
@@ -22,7 +23,8 @@ export default function Weather(props) {
                     description: json.weather[0].description,
                     icon: json.weather[0].icon,
                     temp: json.main.temp,
-                    place: json.name });
+                    place: json.name,
+                    country: json.sys.country });
                 })
             .catch((error) => {
                 console.warn(error);
@@ -54,10 +56,4 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
         paddingTop: 25
     },
-    // background: {
-    //     backgroundColor: 'rgba(0, 0, 0, 0.1)',
-    //     width:"100%", 
-    //     alignItems: 'center',
-    //     height: '40%',
-    // },
 })
