@@ -1,12 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 export default function Forecast(props) {
+    const imageicon = {url: `https://openweathermap.org/img/wn/${props.icon}@2x.png`}
     return (
-        <View style={styles.view}>
-            <Text style={styles.fontmain}>{props.main}</Text>
-            <Text style={styles.fontdescription}>{props.description}</Text>
-            <Text style={styles.fonttemp}>{props.temp} °C</Text>
+        <View>
+            <Text style={styles.fontmain}>{props.place}</Text>
+            <View style={styles.view}>
+                <Image style={styles.image} source={imageicon} resizeMode={'contain'}/>
+                <View>
+                    <Text style={styles.fontmain}>{props.main}</Text>
+                    <Text style={styles.fontdescription}>{props.description}</Text>
+                    <Text style={styles.fonttemp}>{props.temp} °C</Text>
+                </View>
+            </View>
         </View>
     )
 }
@@ -32,5 +39,14 @@ const styles = StyleSheet.create({
         fontSize: 25,
         textAlign: 'center',
         textAlignVertical: 'center',
+    },
+    image: {
+        width: 150,
+        height: 150,
+    },
+    view: {
+        flexDirection: 'row', 
+        justifyContent: 'space-evenly',
+        paddingTop: '30%'
     }
 })
