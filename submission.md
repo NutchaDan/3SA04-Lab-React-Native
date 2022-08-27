@@ -15,7 +15,8 @@
     แก้ไขหน้าตาของโปรแกรมหน้า home หรือหน้าที่ทำการเลือก zipCode และเพิ่ม zipCode ของสถานที่จาก 5 เป็น 12 สถานที่ในประเทศไทย
 ## 6. change header color & update UI
     ทำการเปลี่ยนสีของแถบ header และให้แสดงชื่อของแถบหน้า home เป็น Choose a zip code และหน้า Weather เป็น Weather มีการแก้ไขหน้า home เล็กน้อย 
-
-![6310110139-weather](https://user-images.githubusercontent.com/95014843/187034271-9d4bf153-5064-4ca2-bbd0-4cbd9e4ca679.png)
+    
 
 ![6310110139-home](https://user-images.githubusercontent.com/95014843/187034291-a8b9e096-5b7c-417a-9946-fef6aff2d5f8.png)
+
+![6310110139-weather](https://user-images.githubusercontent.com/95014843/187034271-9d4bf153-5064-4ca2-bbd0-4cbd9e4ca679.png)
