@@ -14,12 +14,17 @@ export default function Forecast(props) {
                     <Text style={styles.fonttemp}>{props.temp} °C</Text>
                 </View>
             </View>
-            <View>
+            <View style={{flexDirection: 'row'}}>
                 <View style={styles.viewtemp}>
-                    <Text style={styles.temp}>temp min  : {props.tempmin}</Text>
-                    <Text style={styles.temp}>temp max : {props.tempmax}</Text>
-                    <Text style={styles.temp}>pressure   : {props.pressure}</Text>
-                    <Text style={styles.temp}>humidity   : {props.humidity}</Text>
+                    <Text style={styles.font}>Temp min  : {props.tempmin} °C</Text>
+                    <Text style={styles.font}>Temp max : {props.tempmax} °C</Text>
+                    <Text style={styles.font}>Pressure   : {props.pressure}hPa</Text>
+                    <Text style={styles.font}>Humidity   : {props.humidity}%</Text>
+                </View>
+                <View style={styles.viewtemp}>
+                    <Text style={styles.font}> Wind Direction  : {props.winddeg}°</Text>
+                    <Text style={styles.font}> Wind peed : {props.windspeed}m/s</Text>
+                    <Text style={styles.font}> Clouds  : {props.clouds}%</Text>
                 </View>
             </View>
         </View>
@@ -67,11 +72,12 @@ const styles = StyleSheet.create({
         borderRadius: 40,
     },
     viewtemp: {
-        paddingTop: 50,
-        
+        paddingTop: 50, 
+        alignItems: 'flex-start'
     },
-    temp: {
-        fontSize: 18,
-        color: '#5A6C16'
+    font: {
+        paddingLeft: 15,
+        fontSize: 17,
+        color: '#2E3D50'
     }
 })

@@ -13,7 +13,10 @@ export default function Weather(props) {
         pressure: 0,
         humidity: 0,
         place: '-',
-        country: '-'
+        country: '-',
+        winddeg: 0,
+        windspeed: 0,
+        clouds: 0
     })
 
     useEffect(() => {
@@ -32,7 +35,10 @@ export default function Weather(props) {
                     pressure: json.main.pressure,
                     humidity: json.main.humidity,
                     place: json.name,
-                    country: json.sys.country });
+                    country: json.sys.country,
+                    winddeg: json.wind.deg,
+                    windspeed: json.wind.speed,
+                    clouds: json.clouds.all });
                 })
             .catch((error) => {
                 console.warn(error);

@@ -9,6 +9,13 @@ const availableZipItems = [
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
     { place: 'Chonburi', code: '20000' },
+    { place: 'Bangkok', code: '10110' },
+    { place: 'Nakhon Sawan', code: '60130' },
+    { place: 'Surat Thani', code: '84130' },
+    { place: 'Trang', code: '92110' },
+    { place: 'Yala', code: '95120' },
+    { place: 'Ayutthaya', code: '13150' },
+    { place: 'Si Sa Ket', code: '33240' },
 ]
 
 const ZipItem = ({place, code, navigation}) => (
@@ -42,14 +49,12 @@ const styles = StyleSheet.create({
         padding: 15
     },
     zipPlace: {
-        flex: 1,
         fontSize: 20,
-        paddingLeft: 50
+        paddingLeft: 40
     },
     zipCode: {
-        flex: 1,
         fontSize: 20,
-        paddingLeft: 60,
+        paddingRight: 50,
         color: '#1C2135'
     }
 })
