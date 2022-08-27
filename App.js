@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import ZipCodeScreen from './screen/ZipCodeScreen';
 import WeatherScreen from './screen/WeatherScreen';
-import { StyleSheet } from 'react-native';
 
 const Stack = createStackNavigator()
 
