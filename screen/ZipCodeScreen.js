@@ -55,6 +55,6 @@ const styles = StyleSheet.create({
     zipCode: {
         fontSize: 20,
         paddingRight: 50,
-        color: '#1C2135'
+        color: '#13315C'
     }
 })
