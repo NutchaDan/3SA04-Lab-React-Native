@@ -8,6 +8,10 @@ export default function Weather(props) {
         description: '-',
         icon: '-',
         temp: 0,
+        tempmin: 0,
+        tempmax: 0,
+        pressure: 0,
+        humidity: 0,
         place: '-',
         country: '-'
     })
@@ -23,6 +27,10 @@ export default function Weather(props) {
                     description: json.weather[0].description,
                     icon: json.weather[0].icon,
                     temp: json.main.temp,
+                    tempmin: json.main.temp_min,
+                    tempmax: json.main.temp_max,
+                    pressure: json.main.pressure,
+                    humidity: json.main.humidity,
                     place: json.name,
                     country: json.sys.country });
                 })

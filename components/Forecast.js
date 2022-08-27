@@ -14,6 +14,14 @@ export default function Forecast(props) {
                     <Text style={styles.fonttemp}>{props.temp} °C</Text>
                 </View>
             </View>
+            <View>
+                <View style={styles.viewtemp}>
+                    <Text style={styles.temp}>temp min  : {props.tempmin}</Text>
+                    <Text style={styles.temp}>temp max : {props.tempmax}</Text>
+                    <Text style={styles.temp}>pressure   : {props.pressure}</Text>
+                    <Text style={styles.temp}>humidity   : {props.humidity}</Text>
+                </View>
+            </View>
         </View>
     )
 }
@@ -54,8 +62,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'rgba(48, 54, 49, 0.1)',
         width: '100%',
-        height: '55%',
+        height: '45%',
         alignItems: 'center',
         borderRadius: 40,
+    },
+    viewtemp: {
+        paddingTop: 50,
+        
+    },
+    temp: {
+        fontSize: 18,
+        color: '#5A6C16'
     }
 })
